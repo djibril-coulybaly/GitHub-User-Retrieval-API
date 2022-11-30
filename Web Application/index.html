@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Assets/CSS/style.css" />
+    <title>Problem 3</title>
+  </head>
+  <body>
+    <div class="mainContent">
+      <header>
+        <h1>Problem 3 - Github User Information Query</h1>
+      </header>
+
+      <div class="userSearch">
+        <form onsubmit="userGithubSearch(); return false;">
+          <input
+            type="text"
+            id="enteredGithubUsername"
+            placeholder="Enter Github username"
+          />
+          <input type="submit" value="Search User" />
+        </form>
+      </div>
+
+      <div class="userProfile">
+        <h3>User Profile</h3>
+        <div id="profileInitLoadingMessage">
+          <p>Profile will appear once a user is found</p>
+        </div>
+        <div id="noUserMessage">
+          <p>No User has been found with the username entered</p>
+        </div>
+
+        <div id="userImage"></div>
+
+        <table>
+          <tr>
+            <th>Name</th>
+            <td id="githubName"></td>
+          </tr>
+          <tr>
+            <th>Username</th>
+            <td id="githubUsername"></td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td id="githubEmail"></td>
+          </tr>
+          <tr>
+            <th>Location</th>
+            <td id="githubLocation"></td>
+          </tr>
+          <tr>
+            <th>Number of Gists</th>
+            <td id="githubNumOfGists"></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="userRepo">
+        <h3>User Repository</h3>
+        <div id="repoInitLoadingMessage">
+          <p>Repositories will appear once a user is found</p>
+        </div>
+        <div id="noRepoMessage">
+          <p>No Repo has been found with the username entered</p>
+        </div>
+        <div id="displayUserRepo"></div>
+      </div>
+
+      <footer>
+        <p>C18423664 - Djibril Coulybaly</p>
+      </footer>
+    </div>
+    <script src="Assets/JavaScript/githubUserInfo.js"></script>
+  </body>
+</html>
