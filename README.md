@@ -8,7 +8,7 @@
 
 - [Introduction](#introduction)
 - [Getting Started](#toolbox-getting-started)
-- [Demonstration](#camera-screenshots)
+- [Demonstration](#camera-demonstration)
 - [Directory Structure](#file_folder-directory-structure)
 
 ---
